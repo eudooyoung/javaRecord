@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/02_java.iml" filepath="$PROJECT_DIR$/.idea/02_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m1_variable_operator/m1_variable_operator.iml" filepath="$PROJECT_DIR$/m1_variable_operator/m1_variable_operator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m2_control/m2_control.iml" filepath="$PROJECT_DIR$/m2_control/m2_control.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m3_array/m3_array.iml" filepath="$PROJECT_DIR$/m3_array/m3_array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m4_object/m4_object.iml" filepath="$PROJECT_DIR$/m4_object/m4_object.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m5_con_static/m5_con_static.iml" filepath="$PROJECT_DIR$/m5_con_static/m5_con_static.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m6_inheritance/m6_inheritance.iml" filepath="$PROJECT_DIR$/m6_inheritance/m6_inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m7_thread/m7_thread.iml" filepath="$PROJECT_DIR$/m7_thread/m7_thread.iml" />
+    </modules>
+  </component>
+</project>

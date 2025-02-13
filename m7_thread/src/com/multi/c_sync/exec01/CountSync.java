@@ -5,7 +5,7 @@ public class CountSync {
 //    하나의 쓰레드가 실행을 완료하기 전까지 다른 쓰레드는 해당 메서드에 접근할수 없다
     private int count = 0;
 
-    public synchronized void increment() { // synchroniaed 키워드
+    public synchronized void increment() { // synchronized 키워드
         count++;
     }
 

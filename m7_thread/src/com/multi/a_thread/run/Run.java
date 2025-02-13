@@ -19,7 +19,7 @@ public class Run {
          * 2. Runnable 인터페이스를 상속받는 방법
          * */
 
-// Runnable 인터페이스 vs Thread 클래스의 차이점
+//  Runnable 인터페이스 vs Thread 클래스의 차이점
 // - Runnable 인터페이스는 스레드화 될 수 있는 메소드 run() 메소드를 가지고있다.
 // - Thread 클래스는 Runnable 인터페이스를 구현하고 있으며 스레드를 활성화 하는 start() 메소드를 가지고있다.
 // - Thread 클래스는 Thread 상태를 제어 할 수 있는 메소드를 가지고 있다.

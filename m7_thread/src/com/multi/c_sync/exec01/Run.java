@@ -21,18 +21,18 @@ public class Run {
 //            }
 //
 //        });// Thread안에 run을 구현해야함
-//
+
 //        t1.start();
 //        t2.start();
 //
 //        t1.join(); //throws InterruptedException at method signature
 //        t2.join(); // t1, t2가 끝날때까지 main method 대기
-//
+
 //        System.out.println(count.getCount());
 
         CountSync count = new CountSync();
 
-        Thread t1 = new Thread(() -> {
+        Thread t1 = new Thread(() -> { // 스레드 객체 생성하면서 내부 메소드 정의
             for(int i = 0; i < 100000; i++) {
                 count.increment();
             }
