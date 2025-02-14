@@ -15,7 +15,7 @@ public class StringBufferTest {
 
 //        StringBuilder sb = new StringBuilder("java");
 
-        StringBuffer sb = new StringBuffer("java");
+        StringBuffer sb = new StringBuffer("java");  //싱크로 걸려 있음
 
         System.out.println(sb);
 

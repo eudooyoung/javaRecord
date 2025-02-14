@@ -50,7 +50,7 @@ public class Run {
         t2.start();
 
         t1.join(); //throws InterruptedException at method signature
-        t2.join(); // t1, t2가 끝날때까지 main method 대기
+        t2.join(); // t1, t2가 끝날때까지 ** t1과 t2를 main thread에 join. main method는 t1과 t2가 끝날 때까지 대기
 
         System.out.println(count.getCount());
     }
