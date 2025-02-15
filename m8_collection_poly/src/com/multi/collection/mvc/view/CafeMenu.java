@@ -42,6 +42,7 @@ public class CafeMenu {
                     break;
                 case 9:
                     System.out.println("프로그램을 종료합니다.");
+                    sc.close();
                     return;
                 default:
                     System.out.println("잘못된 선택입니다. 다시 선택해 주세요.");
@@ -68,7 +69,7 @@ public class CafeMenu {
         MenuItem item = cc.findMenuItem(name);
 
         if (item != null) {
-            System.out.println(item.toString());
+            System.out.println(item);
         } else {
             System.out.println("해당 메뉴를 찾을 수 없습니다.");
         }

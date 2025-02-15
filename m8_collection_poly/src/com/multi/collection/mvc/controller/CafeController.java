@@ -19,42 +19,42 @@ public class CafeController {
     }
 
     public boolean updatePrice(String name, int newPrice) {
-        for (int i = 0; i < this.menuItemList.size(); i++) {
-            if (this.menuItemList.get(i).getName().equalsIgnoreCase(name)) {
+        boolean isUpdated = false;
+        for (MenuItem menuItem : this.menuItemList) { //this.menuItemList의 n번째 인덱스를 MenuItem class 형식으로 받아 menuItem에 반환하겠다는 뜻.
+            if (menuItem.getName().equalsIgnoreCase(name)) {
                 if (newPrice <= 0) {
                     System.out.println("가격을 0보다 높게 설정하세요");
-                    return false;
                 } else {
-                    this.menuItemList.get(i).setPrice(newPrice);
-                    return true;
+                    menuItem.setPrice(newPrice);
+                    isUpdated = true;
                 }
+            } else {
+                System.out.println("해당 메뉴를 찾을 수 없습니다.");
             }
         }
-        System.out.println("해당 메뉴를 찾을 수 없습니다.");
-        return false;
+        return isUpdated;
     }
 
     public MenuItem findMenuItem(String name) {
-        for (int i = 0; i < this.menuItemList.size(); i++) {
-            if(this.menuItemList.get(i).getName().equalsIgnoreCase(name)) {
-                return this.menuItemList.get(i);
+        MenuItem item = null;
+        for (MenuItem menuItem : menuItemList) {
+            if (menuItem.getName().equalsIgnoreCase(name)) {
+                item = menuItem;
+                break;
             }
         }
-//        for (MenuItem m: this.menuItemList) {
-//            if (m.getName().equalsIgnoreCase(name)) {
-//                return m;
-//            }
-//        }
-        return null;
+        return item;
     }
 
     public boolean deleteMenuItem(String name) {
+        boolean isDeleted = false;
         for (int i = 0; i < this.menuItemList.size(); i++) {
-            if(this.menuItemList.get(i).getName().equalsIgnoreCase(name)) {
-                 this.menuItemList.remove(i);
-                 return true;
+            if (this.menuItemList.get(i).getName().equalsIgnoreCase(name)) {
+                this.menuItemList.remove(i);
+                isDeleted = true;
+                break;
             }
         }
-        return false;
+        return isDeleted;
     }
 }
