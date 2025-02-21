@@ -13,7 +13,7 @@ public class Run {
          * 메소드 재정의를 하면 메소드를 호출할 시 재정의한 메소드가 우선적으로 동작하게 된다.
          * */
 
-        Car car = new Car();
+        Car car = new FireCar(); // 생성자 안의 코드는 객체가 생성될 때 호출됨
         car.soundHorn();
         car.run();
         car.soundHorn();
