@@ -41,7 +41,7 @@ public class PrintTest2 {
         double dNum = 4.53;
 
         System.out.printf("%f\t%f\n", fNum, dNum);//%f - 실수 값을 소수점 아래 6자리 까지 보여줌
-        // 넘어가게되면 반올림, 소수점 아래 값없으면 0으로 채움
+        // 넘어가게되면 반올림, 소수점 아래 값이 없으면 0으로 채움
 
         System.out.printf("%.3f\t%.3f\n", fNum, dNum);//소수점 셋재짜리까지
 

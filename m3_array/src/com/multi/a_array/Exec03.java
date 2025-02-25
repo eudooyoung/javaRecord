@@ -84,6 +84,7 @@ public class Exec03 {
         }
         System.out.println(Arrays.toString(num));
 
+//        문자열을 배열로 저장
         String s1 = "감자, 고구마, 양파";
         String[] sArr = s1.split(",");
         System.out.println(Arrays.toString(sArr));

@@ -5,6 +5,7 @@ import java.util.Random;
 public class Exec01 {
     public static void main(String[] args) {
         int[] jumsu = new int[1000]; //인덱스는 크기 -1까지
+
 // object class 확인
         System.out.println(jumsu.toString());//toString을 적지않아도 내부적으로 호출함
         System.out.println(jumsu);// jvm이 자동으로 변수 toString()호출하여 주소값 출력
@@ -62,7 +63,7 @@ public class Exec01 {
 
 //        만들고자 하는 배열의 크기와 값이 정해져 있다면 {}안에 값을 넣어서 선언과 동시에 총기화
         System.out.println();
-        int[] scores = {100, 20, 90};
+        int[] scores = {100, 25, 90};
 //        배열 항목의 총합 구하기
         {
             int sum = 0; //총합 초기화
@@ -79,7 +80,7 @@ public class Exec01 {
                 sum += scores[i];
                 avg = (double) sum / (i + 1);
             }
-            System.out.println(avg);
+            System.out.printf("%.2f \n", avg);
         }
 
         /* 랜덤한 카드를 한 장 뽑아서 출력해보자 */

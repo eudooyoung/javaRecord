@@ -30,8 +30,9 @@ public class Exec01 {
 
         int count = 0;
         for (int i = 0; i < solution.length; i++) {
+            System.out.printf("내가 제출한 답: %-2d\t 정답: %-2d\t 결과: %b \n", answer[i], solution[i], (solution[i] == answer[i]));
             if (solution[i] == answer[i]) count++;
         }
-        System.out.println(count);
+        System.out.println("총 맞춘 개수: " + count);
     }
 }

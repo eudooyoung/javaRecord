@@ -40,10 +40,11 @@ public class Exec04 {
 
 // 6.6. Arrays.asList()
 // 배열을 리스트로 변환
+// 컬렉션
         String[] fruits = {"apple", "banana", "cherry"};
         List<String> fruitList = Arrays.asList(fruits);
         System.out.println("6.6. Arrays.asList() -> " + fruitList);
-//        System.out.println(Arrays.toString(fruits));
+        System.out.println(fruitList);                              // 리스트 컬렉션은 toString이 구현되어 있어서 그냥 출력 할 수 있음
 
 // 6.7. Arrays.deepToString()
 // 다차원 배열을 문자열로 변환하여 출력
@@ -52,8 +53,9 @@ public class Exec04 {
 
 // 6.8. Arrays.copyOfRange()
 // 배열의 특정 범위를 복사하여 새 배열 생성 (끝 인덱스는 포함하지 않음) 새 해시태그 부여?
-//      int numbers[] = {1, 2, 3, 4, 5}
-        int[] rangeCopy = Arrays.copyOfRange(numbers, 1, 4);  // 인덱스 1부터 3까지 복사, rangeCopy 배열은 내부적으로 new를 사용해 생성됨
+//      int[] numbers = {1, 2, 3, 4, 5};
+        System.out.println(numbers.length);
+        int[] rangeCopy = Arrays.copyOfRange(numbers, 2, 8);  // from번째 index부터 (to-from) 크기의 배열을 생성. rangeCopy 배열은 내부적으로 new를 사용해 생성됨
         System.out.println("6.8. Arrays.copyOfRange() -> " + Arrays.toString(rangeCopy));
     }
 

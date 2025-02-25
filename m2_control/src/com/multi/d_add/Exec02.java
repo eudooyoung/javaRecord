@@ -44,24 +44,43 @@ public class Exec02 {
             int choice = scn.nextInt();
             scn.nextLine();
 
+//            switch (choice) {
+//                case 1:
+//                    spd++;
+//                    System.out.println("현재속도: " + spd);
+//                    System.out.println();
+//                    break;
+//                case 2:
+//                    spd--;
+//                    System.out.println("현재속도: " + spd);
+//                    System.out.println();
+//                    break;
+//                case 3:
+//                    System.out.println("프로그램 종료");
+//                    run = false;
+//                default:
+//                    System.out.println("다시 입력하세요");
+//                    System.out.println();
+//                    break;
+//            }
+
             switch (choice) {
-                case 1:
+
+                case 1 -> {
                     spd++;
                     System.out.println("현재속도: " + spd);
                     System.out.println();
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     spd--;
                     System.out.println("현재속도: " + spd);
                     System.out.println();
-                    break;
-                case 3:
+                }
+                case 3 -> {
                     System.out.println("프로그램 종료");
                     run = false;
-                default:
-                    System.out.println("다시 입력하세요");
-                    System.out.println();
-                    break;
+                }
+                default -> System.out.println("다시 입력하세요");
             }
 
         }

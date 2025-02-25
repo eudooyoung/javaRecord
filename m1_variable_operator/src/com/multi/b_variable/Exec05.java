@@ -35,7 +35,7 @@ public class Exec05 {
 //      byte y2 = x2; 큰 데이터타입을 더 작은 데이터 타입으로 형변환 불가
 
         byte y2 = (byte) x2; // 강제, 명시적 형변환
-        System.out.println(y2); // 데이터 손실(300-256(128*2))로 인해 44출력
+        System.out.println(y2); // 데이터 손실(300-256(128*2))로 인해 44출력, 오버플로우
 
         double x3 = 400.4;
         int y3 = (int) x3;
@@ -76,6 +76,7 @@ public class Exec05 {
 
         byte result = (byte) (byteNum1 + byteNum2);
         System.out.println(result);
+
 
         char val1 = 'A';
         char val2 = 1;

@@ -31,6 +31,8 @@ public class Exec05 {
 		System.out.println(substring);
 
 		location = subject.indexOf("자바");
+		// 자바가 저장된 문자열을 찾을 수 없을 경우
+//		문자열의 위치가 -1이 될수 없으므로 찾고자 하는 단어가 없다고 간주 할 수 있다.
 		if(location != -1) {
 			System.out.println("자바와 관련된 책이군요");
 		} else {

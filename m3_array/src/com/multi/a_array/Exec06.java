@@ -20,19 +20,19 @@ public class Exec06 {
 
 //        자료형[][] 변수명 = new 자료형[할당할 배열의 갯수][할당할 배열의 길이];
 
-        int[][] iarr1 = new int[6][]; //행의 갯수는 반드시 지정
+        int[][] iarr1 = new int[6][]; // 행의 갯수는 반드시 지정
 
-        int iarr2[][] = new int[6][]; //다양한 선언방식
+        int iarr2[][] = new int[6][]; // 다양한 선언방식
         int[] iarr3[] = new int[6][];
 
-        int[] iarr4[] = new int[3][5]; //열의 크기가 같을때의 선언방식, 다를때는 뒤를 비워둠
+        int[] iarr4[] = new int[3][5]; // 열의 크기가 같을때의 선언방식, 다를때는 뒤를 비워둠
 
         for (int i = 0; i < iarr4[0].length; i++) {
             System.out.print(iarr4[0][i] + " ");
         }
         System.out.println();
 
-        for (int i = 0; i < iarr4.length; i++) {//행의 갯수[]생략 가능
+        for (int i = 0; i < iarr4.length; i++) {// 행의 갯수[]생략 가능
             System.out.println();
             for (int j = 0; j < iarr4[i].length; j++) {
                 System.out.print(iarr4[i][j] + " ");
@@ -48,6 +48,17 @@ public class Exec06 {
             for (int x = 0; x < iarr5[y].length; x++) {
                 System.out.print(iarr5[y][x] + " ");
             }
+        }
+        System.out.println();
+        System.out.println(Arrays.deepToString(iarr5));
+
+//        행의 인덱스를 지정해주면 일차원 배열처럼 사용 가능
+        System.out.println(Arrays.toString(iarr5[1]));
+
+//        2차원 배열을 세로로 뽑아 보고 싶으면 이런 식으로 구현
+//        2차원 배열에서 인덱스 지정 없이 array.length는 항상 행의 크기를 반환 한다. (다차원 배열에서는 아마도 가장 상위 차원)
+        for(int i = 0; i < iarr5.length; i++) {
+            System.out.println(Arrays.toString(iarr5[i]));
         }
 
 //        가변배열
@@ -73,7 +84,7 @@ public class Exec06 {
 
         System.out.println();
         System.out.println(Arrays.toString(iarr6)); //내부배열의 각 주소를 배열로 출력
-        System.out.println(Arrays.deepToString(iarr6));
+        System.out.println(Arrays.deepToString(iarr6)); // 다차원 배열에서 내부 값을 호출하려면 Arrays.toString이 아닌 Arrays.deepToString을 호출해야 한다.
         System.out.println();
 
         int[][] original = {{1, 2}, {3, 4}};
@@ -84,9 +95,12 @@ public class Exec06 {
         System.out.println(Arrays.deepToString(copy));     // [[10, 2], [3, 4]]
 
 //      깊은복사
+//        배열의 본 주소는 다름
         System.out.println("original: " + original);
         System.out.println("copy: " + copy);
+
 //      얕은복사
+//         다차원 배열에서 각 행에 저장된 배열의 주소는 같다?
         System.out.println("original: " + original[1]);
         System.out.println("copy: " + copy[1]);
         System.out.println(copy == original);

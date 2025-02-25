@@ -43,8 +43,11 @@ public class Exec03 {
          * 0 ~ 9
          * */
 
-        int num5 = (int)(Math.random() * 10);
-        System.out.println(num5);
+        int num5 = (int)(Math.random() * 35);
+        System.out.println("num5: " + num5);
+//         Math.random()의 난수 생성 범위 0.0 ~ 0.999999999
+        double num5_1 = Math.random();
+        System.out.println(num5_1);
 
 //        1 ~10
         int num6 = (int)(Math.random() * 10);
