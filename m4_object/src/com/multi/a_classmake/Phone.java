@@ -54,6 +54,16 @@ public class Phone {
      *
      * */
 
+    private static Phone phone; // 싱글톤 연습
+
+    private Phone() {}
+
+    public static Phone getInstance() {
+        if (phone == null) {
+            phone = new Phone();
+        }
+        return phone;
+    }
 
     public void setSize(int size) { //set 메소드 생성, 값을 필드(멤버변수, 속성, 프로퍼티), 반환 값 필요 없음: void
         if (size >= 0) {

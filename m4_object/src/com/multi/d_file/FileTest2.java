@@ -10,7 +10,7 @@ public class FileTest2 {
         String s2 = JOptionPane.showInputDialog("제목 입력");
         String s3 = JOptionPane.showInputDialog("내용 입력");
 
-        FileWriter file = null; //참조형 자료는 null 값을 포함할 수 없다.
+        FileWriter file = null; //참조형 자료는 null 값을 포함할 수 없다.(있다?)
 //        null포인트 익셉션 확인
 
         try {

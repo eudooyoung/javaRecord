@@ -4,7 +4,7 @@ public class Calculator2 {
 
     public int add(int x, int y) {
 //        x, y 파라미터, 지역변수, 매개변수
-        //지역변수는 초기화를 해줘야하마, 그래서 값을 받아와서 사용
+        //지역변수는 초기화를 해줘야함, 그래서 값을 받아와서 사용
 //        지역변수는 블럭 안에서만 사용 가능
         return x + y;
     }

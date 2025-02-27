@@ -4,11 +4,14 @@ import com.multi.a_classmake.*;
 
 public class MyRoom {
 
+
     public static void main(String[] args) {
 
-        Phone p1 = new Phone(); // 객체 생성 (heap에 등록?)
+//        Phone p1 = new Phone(); // 객체 생성 (heap에 등록?)
 //        p1.speaker = "애플"; // 스트링형식, 값을 지정: set
 //        p1.size = 10; // int형식
+
+        Phone p1 = Phone.getInstance();
 
         System.out.println(p1); // p1에 저장되어있는 주소값 출력
 //        System.out.println(p1.size); 값을 얻어옴: get
@@ -23,12 +26,13 @@ public class MyRoom {
         p1.takePhoto();
         System.out.println();
 
-        Phone p2 = new Phone(); // Phone 클래스의 또 다른 객체 생성
+//        Phone p2 = new Phone(); // Phone 클래스의 또 다른 객체 생성
+        Phone p2 = Phone.getInstance();
         p2.setSize(20);
         p2.setSpeaker("삼성");
         System.out.println();
 
-        System.out.println(p2); // p1과 다른 주소 확인
+        System.out.println(p2); // p1과 다른 주소 확인 // 싱글톤 패턴으로 객체를 생성하면 같은 주소값을 가르킴을 알 수 있다.
         System.out.println(p2.getSize());
         System.out.println(p2.getSpeaker());
 

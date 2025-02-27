@@ -41,7 +41,7 @@ public class Run {
             int no = sc.nextInt();
             switch (no) {
                 case 1:
-                    racer.startUp();
+                    racer.startUp();  // CarRacer 객체의 startUp 메소드를 호출 -> Car객체의 startUp 객체를 호출
                     break;
                 case 2:
                     racer.stepAccelator();
@@ -54,9 +54,9 @@ public class Run {
                     break;
                 case 9:
                     System.out.println("프로그램을 종료합니다.");
-//                    sc.close();
-//                    break continue 차이 확인
-                    break;
+                    sc.close();
+//                    break continue 차이 확인: continue는 다시 조건문의 처음으로 돌아는것, break는 switch문을 벗어나는 듯?
+                    return;
                 default:
                     System.out.println("잘못 선택하였습니다");
                     break;
