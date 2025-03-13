@@ -28,7 +28,7 @@ public class Run {
 //        SmartPhone은 추상 클래스인 Produc를 상속받은 일반 클래스. 객체 생성 가능
 //        더 큰 타입인 Product로 받을 수 있음
         Product product = new SmartPhone();
-
+        System.out.println(product.getClass().getSimpleName());
         System.out.println(product instanceof SmartPhone); // product는 두 클래스와 타입이 일치
         System.out.println(product instanceof Product);
 

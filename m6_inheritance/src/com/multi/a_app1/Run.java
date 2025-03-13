@@ -13,23 +13,49 @@ public class Run {
          * 메소드 재정의를 하면 메소드를 호출할 시 재정의한 메소드가 우선적으로 동작하게 된다.
          * */
 
-        Car car = new FireCar(); // 생성자 안의 코드는 객체가 생성될 때 호출됨
-        car.soundHorn();
-        car.run();
-        car.soundHorn();
-        car.stop();
-        car.soundHorn();
+//        자식 클래스 생성자는 부모 클래스 생성자의 코드를 같이(먼저) 실행한다.
+        Car fireCar = new FireCar();
+
+        System.out.println(fireCar.getClass().getSimpleName());
+//        fireCar 는 Car 가 아닌 FireCar 형식이라고 프린트됨...
+//        컴파일 단계에서는 Car 클래스로 되어있다가, 실행 단계에서 FireCar 로 변환되는 듯?
+
+//        FireCar 가 Car 클래스의 soundHorn 이 아닌 FireCar 에서 오버라이드된 soundHorn 메소드 호출
+//        동적바인딩, 다형성
+//        Car 타입 변수에 FireCar 인스턴스를 대입하면, Car 를 기준으로 인스턴스가 생성되지만, FireCar 에서 오버라이드된
+//        메소드들도 모두 함께 생성. 가장 최근(가장 하위타입?)에 오버라이드된 메소드를 호출
+        fireCar.soundHorn();
+
+//        Car 의 기존 run 메소드 호출
+        fireCar.run();
+        fireCar.soundHorn();
+        
+//        Car 의 기존 stop 메소드 호출
+        fireCar.stop();
+        fireCar.soundHorn();
+
+//      fireCar 는 Car 형식으로 선언되었기 때문에 FireCar 의 메소드 사용 불가
+//        fireCar.sprayWater();
+//        FireCar 의 모든 메소드에 접근하기 위해서는 강제 형변환 필요!
+        FireCar castedFireCar = (FireCar)fireCar;
+        castedFireCar.sprayWater();
 
         System.out.println();
 
-        RacingCar car2 = new RacingCar();
-        car2.soundHorn();
-        car2.run();
-        car2.soundHorn();
-        car2.stop();
-        car2.soundHorn();
+        RacingCar racingCar = new RacingCar();
 
-//        car2.sprayWater();
+//        RacingCar 가 오버라이드한 sountHorn 호출
+        racingCar.soundHorn();
 
+//        RacingCar 가 오버라이드한 run 호출
+        racingCar.run();
+        racingCar.soundHorn();
+
+//        RacingCar 가 오버라이드한 stop 호출
+        racingCar.stop();
+        racingCar.soundHorn();
+
+//        racingCar 는 RacingCar 형식으로 선언 되었기 때문에 RacingCar 의 메소드 사용 가능
+        racingCar.drift();
     }
 }

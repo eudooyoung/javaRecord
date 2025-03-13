@@ -179,9 +179,9 @@ public class Exec01 {
 
         System.out.println(milk);
 
-        milk.addLast("상한 우유"); // addLast 뒤에 추가
-        milk.addFirst("신선한 우유"); // addFirst 앞에 추가
-        milk.addLast("상한 우유"); // addLast 뒤에 추가
+        milk.addLast("상한 우유"); // addLast: 뒤에 추가
+        milk.addFirst("신선한 우유"); // addFirst: 앞에 추가
+        milk.addLast("상한 우유"); // addLast: 뒤에 추가
         milk.addFirst("신선한 우유");
 
         System.out.println(milk);

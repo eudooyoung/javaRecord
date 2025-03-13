@@ -49,8 +49,8 @@ public class Book {
 
     @Override
     public boolean equals(Object obj) {
-//        if (o == null || getClass() != o.getClass()) return false;
-//        Book book = (Book) o;
+//        if (obj == null || this.getClass() != obj.getClass()) return false;
+//        Book book = (Book) obj;
 //        return price == book.price && Objects.equals(title, book.title) && Objects.equals(author, book.author);
 
 //        bk1.equals(bk3)

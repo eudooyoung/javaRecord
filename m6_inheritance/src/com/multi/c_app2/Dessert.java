@@ -9,6 +9,9 @@ public class Dessert extends Food{
         this.dessertType = dessertType;
     }
 
+    public void eat() {
+        System.out.println("맛있어요.");
+    }
     @Override
     public String toString() {
         return "Dessert{" +

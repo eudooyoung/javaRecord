@@ -23,4 +23,9 @@ public class SuperClass {
     public final void finalMethod() {} //final 키워드
 
     protected void protectedMethod() {} // 상속 받은 클래스에서만 접근 가능한 메소드
+
+    protected void protectedMethod1() {} // 상속 받은 클래스에서만 접근 가능한 메소드
+
+    protected void protectedMethod2() {} // 상속 받은 클래스에서만 접근 가능한 메소드
+
 }

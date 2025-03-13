@@ -5,6 +5,7 @@ public class Cat extends Animal implements Action {
     public Cat(String name) {
         super(name);
     }
+//    인터페이스안에 있는 메소드를 전부 재정의 해줘야 하는듯
     @Override
     public void makeSound() {
         sound();

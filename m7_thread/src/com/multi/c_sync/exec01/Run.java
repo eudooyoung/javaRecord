@@ -30,7 +30,7 @@ public class Run {
 
 //        System.out.println(count.getCount());
 
-        CountSync count = new CountSync();
+        Count count = new Count();
 
         Thread t1 = new Thread(() -> { // 스레드 객체 생성하면서 내부 메소드 정의
             for(int i = 0; i < 100000; i++) {

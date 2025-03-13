@@ -20,4 +20,8 @@ public class RacingCar extends Car{
     public void stop() {
         System.out.println("RacingCar가 멈춥니다");
     }
+
+    public void drift(){
+        System.out.println("RacingCar 가 드리프트 합니다.");
+    }
 }

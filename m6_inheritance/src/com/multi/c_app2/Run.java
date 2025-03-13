@@ -3,6 +3,10 @@ package com.multi.c_app2;
 public class Run {
     public static void main(String[] args) {
 
+        Beverage water = new Beverage("생수", 3000, false);
+        System.out.println(water);
+        water.describe();
+
         HotBeverage coffee = new HotBeverage("뜨아", 4000);
         System.out.println(coffee);
         coffee.describe();
@@ -20,7 +24,11 @@ public class Run {
         cola.describe();
 
         System.out.println("-----------------------------------------");
-        MainDish steak = new MainDish("스테이크", 8000);
+        Food omelette = new Food("오믈렛", 2000, "브런치");
+        System.out.println(omelette);
+
+        System.out.println("-----------------------------------------");
+        MainDish steak = new MainDish("스테이크", 8000, "육류");
         System.out.println(steak);
 
         System.out.println("-----------------------------------------");

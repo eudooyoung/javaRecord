@@ -5,11 +5,12 @@ public class Run {
     public static void main(String[] args) {
         //enum 클래스는 상수필드를 관리, enum 클래스명
 //        stataic final자동 선언
-//        열겨헝, 상수값 이외의 값은 할당이 안됨
+//        열거형, 상수값 이외의 값은 할당이 안됨
 //        enum Day {MONDAY, TUESDAY, FRIDAY} //enum 클래스의 상수 필드 관리
 
         Day today = Day.FRIDAY;
 
+        System.out.println(today);
         switch (today) {
             case MONDAY:
                 break;

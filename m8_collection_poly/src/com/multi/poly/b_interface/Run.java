@@ -15,12 +15,14 @@ public class Run {
 //        InterProduct interProduct = new InterProduct(); 인터페이스는 생성 불가능, 생성자 존재하지 않음
 
 //        참조 타입으로는 사용 가능
+//        실제로 생성된 객체는 Product 클래스
         InterProduct interProduct = new Product();
 
         interProduct.method1();
         interProduct.defaultMethod();
 
         InterProduct.staticMethod();
+
         System.out.println(InterProduct.MAX_NUM);
         System.out.println(InterProduct.MIN_NUM);
     }

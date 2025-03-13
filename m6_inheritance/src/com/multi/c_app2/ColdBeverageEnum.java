@@ -20,14 +20,7 @@ public class ColdBeverageEnum extends Beverage {
         super.describe(); // Beverage의 describe 함수호출
         System.out.println("이 음료는 차가운 상태로 제공됩니다.");
 
-        // 얼음의 양에 따른 설명
-//        System.out.println(switch (iceLevel) {
-//            case NONE -> "얼음 없이 제공됩니다.";
-//            case LOW -> "얼음이 적게 들어갑니다.";
-//            case MEDIUM -> "얼음이 보통으로 들어갑니다.";
-//            case HIGH -> "얼음이 많이 들어갑니다.";
-//            default -> "얼음 양을 알 수 없습니다.";
-//        });
+
         System.out.println(iceLevel.getDesc());
 
         // 탄산 여부에 따른 설명

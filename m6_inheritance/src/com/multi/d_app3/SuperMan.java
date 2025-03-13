@@ -2,25 +2,38 @@ package com.multi.d_app3;
 
 public class SuperMan extends Man{
 
-    private boolean fly;
+    private boolean isFlying;
 
-    public SuperMan(int age, String name, int power, boolean fly) {
+    public SuperMan(int age, String name, int power, boolean isFlying) {
         super(age, name, power);
-        this.fly = fly;
+        this.isFlying = isFlying;
     }
 
     public void space() {
-        if(fly) {
-            System.out.println("슈퍼맨이 날고 있습니다.");
+        if(isFlying) {
+            System.out.println(super.getName() + "이 하늘을 납니다");
         } else {
-            System.out.println("슈퍼맨이 날고 있지 않습니다.");
+            System.out.println(super.getName() + "이 땅에 내려 왔습니다.");
         }
+    }
+
+    public boolean isFlying() {
+        return isFlying;
+    }
+
+    public void setFlying(boolean flying) {
+        isFlying = flying;
+    }
+
+    @Override
+    public void run() {
+        System.out.println("슈퍼맨이 질주합니다.");
     }
 
     @Override
     public String toString() {
         return "SuperMan{" +
-                "fly=" + fly +
+                "isFlying=" + isFlying +
                 "} " + super.toString();
     }
 }

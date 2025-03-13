@@ -30,12 +30,12 @@ HEAVY
 getSize()
 ==========================
 악어 extends Reptile, non-sealed
-- isJaw: boolean
+- isJawOpen: boolean
 -----------------
 openJaw();
 ============================
 거북이 extends Reptile, final
-- isSwim: boolean
+- isSwiming: boolean
 ---
 swim();
 ===============================

@@ -3,19 +3,24 @@ package com.multi.d_app3;
 public class Run {
     public static void main(String[] args) {
 
-        Man man1 = new Man(25, "마크", 5);
-        System.out.println(man1);
-        man1.run();
-        man1.eat();
-        man1.sleep();
+        Man mark = new Man(25, "마크", 5);
+        System.out.println(mark);
+        mark.run();
+        mark.eat();
+        mark.sleep();
 
-        SuperMan man2 = new SuperMan(30, "케빈", 10, true);
-        System.out.println(man2);
-        man2.space();
-        man2.run();
+        Man kevin = new SuperMan(30, "케빈", 10, true);
+        System.out.println(kevin);
+        kevin.run();
+        if(kevin instanceof SuperMan superKevin) {
+            superKevin.space();
+            superKevin.setFlying(false);
+            superKevin.space();
+        }
 
-        Woman woman1 = new Woman(25, "제인", "체리케이크");
-        System.out.println(woman1);
+
+        Woman woman = new Woman(25, "제인", "체리케이크");
+        System.out.println(woman);
 
         WonderWoman woman2 = new WonderWoman(28,"티미", "오믈렛", true);
         System.out.println(woman2);

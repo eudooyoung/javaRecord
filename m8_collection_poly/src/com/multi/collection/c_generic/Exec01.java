@@ -21,7 +21,13 @@ public class Exec01 {
 
         GenericTest gt = new GenericTest();
         gt.setValue(1);
+        System.out.println(gt.getValue().getClass().getSimpleName());
+//        출력 결과: Integer
+//        1을 자동으로 boxing 하여 GenericTest 에서 객체 형식으로 선언된 value 에
+//        객체 형식으로 넣어줌
         gt.setValue("test");
+        System.out.println(gt.getValue().getClass().getSimpleName());
+
 
         System.out.println(gt.getValue());
 
@@ -36,6 +42,8 @@ public class Exec01 {
         GenericTest<String> gt4 = new GenericTest<>();
         gt4.setValue("제니");
         gt3.compare(gt4);
+        boolean result2 = gt3.compare(gt);
+        System.out.println(result2);
 
         boolean result = gt3.compare(gt4);
         System.out.println(result);

@@ -6,7 +6,7 @@ import com.multi.a_constructor.MemberDTO;
 public class NonStaticMethod {
     // 메소드
     /*
-     * [접근제한자] [예약어] 반환할값의자료형 메소드명([자료형 매개변수명, 자료형 매개변수명, ...]) {
+     * [접근제한자] [예약어] 반환할 값의 자료형 메소드명([자료형 매개변수명, 자료형 매개변수명, ...]) {
      *     수행내용;
      *     [return 반환값;]
      * } []: 생략 가능
@@ -35,7 +35,7 @@ public class NonStaticMethod {
 
     //    5. 객체로 매개 변수를 받을 수 있다 **확인
     public void method5(Account a1){
-        a1.toString();
+        System.out.println(a1.toString());
     }
 
 //    "객체명"을 매개 변수로 받음
@@ -43,6 +43,7 @@ public class NonStaticMethod {
 //                                                  MembetDTO 클래스 형식의 객체를 매개 변수로 받아
 //                                                  그 객체의 setName 메소드를 호출
         member.setName("리사");
+        System.out.println(member.getName());
     }
 
 //    public void changeName(Account name) {

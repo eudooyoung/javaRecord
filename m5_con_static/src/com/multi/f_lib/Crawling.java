@@ -14,6 +14,7 @@ public class Crawling {
 //    원하는 데이터 추출 사용해보기
 
     public static void main(String[] args) {
+//        Jsoup 라이브러리 커넥션 사용
         Connection con = Jsoup.connect("https://www.naver.com/");
 
         System.out.println("사이트 연결 성공");
@@ -33,5 +34,6 @@ public class Crawling {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+//        Jsoup 은 커넥션을 스스로 닫음.
     }
 }
